@@ -1,0 +1,47 @@
+<GuiXml>
+    <Controls>
+        <Control name="ZAM_BuffDisplayLine" virtual="true">
+            <Dimensions y="30"/>
+            <OnUpdate></OnUpdate>
+            <OnMouseEnter></OnMouseEnter>
+            <OnMouseExit></OnMouseExit>
+            <Controls>
+                <Texture name="$(parent)Icon"
+                         textureFile="EsoUI\Art\TreeIcons\tutorial_idexicon_death_down.dds">
+                    <Dimensions x="45" y="45"/>
+                    <Anchor point="LEFT"/>
+                    <Label name="$(parent)Time" font="ZoFontGameMedium"
+                           verticalAlignment="CENTER"
+                           horizontalAlignment="RIGHT" text="58s">
+                        <Dimensions x="20" y="20"/>
+                        <Anchor point="BOTTOMRIGHT" offsetX="-2"/>
+                    </Label>
+                </Texture>
+
+                <Label name="$(parent)Name" font="ZoFontGameMedium"
+                       wrapMode="ELLIPSIS" verticalAlignment="CENTER"
+                       text="Yay Buff!">
+                    <Dimensions y="28"/>
+                    <Anchor point="LEFT" relativeTo="$(parent)Icon"
+                            relativePoint="RIGHT" offsetX="5"/>
+                    <Anchor point="RIGHT" relativeTo="$(parent)Time"
+                            relativePoint="LEFT" offsetX="5"/>
+                </Label>
+                <StatusBar name="$(parent)Statusbar"
+                           inherits="ZO_DefaultStatusBar">
+                    <Dimensions y="24"/>
+                    <Anchor point="LEFT" relativeTo="$(parent)Icon"
+                            relativePoint="RIGHT" offsetX="1"/>
+                    <Anchor point="RIGHT" relativeTo="$(parent)"
+                            relativePoint="RIGHT"/>
+                </StatusBar>
+            </Controls>
+        </Control>
+        <Control name="ZAM_BuffDisplay_Player" inherits="ZAM_BuffDisplayLine"
+                 virtual="true">
+        </Control>
+        <Control name="ZAM_BuffDisplay_Reticleover"
+                 inherits="ZAM_BuffDisplayLine" virtual="true">
+        </Control>
+    </Controls>
+</GuiXml>

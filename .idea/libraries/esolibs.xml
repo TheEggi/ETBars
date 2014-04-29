@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="esolibs" type="Lua">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../esolibs/sylvanaar2-elder-scrolls-online" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

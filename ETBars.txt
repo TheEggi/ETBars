@@ -1,0 +1,14 @@
+## APIVersion: 100003
+## Title: ETBars
+## Author: Eggi
+## Version: 1.0.4
+## Description: An addon to display your buffs in a single bar
+## SavedVariables: ETBarsDb
+## OptionalDependsOn: LibAddonMenu-1.0 LibMediaProvider-1.0
+
+libs\LibStub\LibStub.lua
+libs\LibMediaProvider-1.0\LibMediaProvider-1.0.lua
+libs\LibAddonMenu-1.0\LibAddonMenu-1.0.lua
+
+ETBars.lua
+ETBars.xml
